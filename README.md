@@ -86,8 +86,7 @@ tensorboard --logdir=logs
 
 ## 📷 Screenshots 🖼️
 
-(Add relevant screenshots of your Streamlit UI and model performance charts.)
-
+![Image Description](img.png)
 ---
 
 ## 🤝 Contributing 🤲
