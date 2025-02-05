@@ -64,6 +64,26 @@ prediction = model.predict(input_data_scaled)
 prediction_proba = prediction[0][0]
 
 st.write(f'Churn Probability: {prediction_proba:.2f}')
+custom_footer = """
+    <style>
+    .footer {
+        position: scroll;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        color: white;
+        border:2px solid white;
+        border-radius:10px;
+    }
+    </style>
+    <div class="footer">
+        Developed by <b>Laavanjan</b> | © Faculty of IT B22
+    </div>
+"""
+st.markdown(custom_footer, unsafe_allow_html=True)
 
 if prediction_proba > 0.5:
     st.write('The customer is likely to churn.')
